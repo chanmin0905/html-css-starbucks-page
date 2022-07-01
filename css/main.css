@@ -11,6 +11,10 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 header {
   background-color: royalblue;
@@ -31,4 +35,51 @@ header .logo {
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+header div.sub-menu {
+}
+
+header div.sub-menu ul.menu {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header div.sub-menu ul.menu li {
+  position: relative;
+}
+
+header div.sub-menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header div.sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+
+header div.sub-menu ul.menu li a {
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+}
+
+header div.sub-menu ul.menu li a:hover {
+  color: #000;
+}
+
+header div.search {
+}
+
+header div.search input {
+}
+
+header div.search input .material-icons {
 }

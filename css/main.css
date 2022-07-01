@@ -17,14 +17,15 @@ a {
 
 /* HEADER */
 header {
-  background-color: royalblue;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
 }
 
 header .inner {
   width: 1100px;
   height: 120px;
   margin: 0 auto;
-  background-color: orange;
+  /* background-color: orange; */
   position: relative;
 }
 
@@ -35,9 +36,14 @@ header .logo {
   bottom: 0;
   left: 0;
   margin: auto;
+  /* display: none; */
 }
 
 header div.sub-menu {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 
 header div.sub-menu ul.menu {
@@ -75,11 +81,40 @@ header div.sub-menu ul.menu li a:hover {
   color: #000;
 }
 
-header div.search {
+header div.sub-menu div.search {
+  height: 34px;
+  position: relative;
 }
 
-header div.search input {
+header div.sub-menu div.search input {
+  font-size: 12px;
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  transition: width 0.5s;
 }
 
-header div.search input .material-icons {
+header div.sub-menu div.search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+
+header div.sub-menu div.search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: all 0.5;
+}
+
+header div.sub-menu div.search.focused .material-icons {
+  opacity: 0;
 }

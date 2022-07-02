@@ -1,0 +1,8 @@
+.idea
+.vscode
+.DS_Store
+.eslintrc.json
+.prettierrc
+.prettierrc.json
+node_modules/
+package-lock.json
